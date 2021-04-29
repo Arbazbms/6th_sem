@@ -1,0 +1,825 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- saved from url=(0040)https://ssp.postmatric.karnataka.gov.in/ -->
+<html xmlns="http://www.w3.org/1999/xhtml"><script src="chrome-extension://ljdobmomdgdljniojadhoplhkpialdid/page/prompt.js"></script><script src="chrome-extension://ljdobmomdgdljniojadhoplhkpialdid/page/runScript.js"></script><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <script type="text/javascript">
+        window.history.forward(1);
+        function noBack() { window.history.forward(1); }
+    </script>
+    <script type="text/javascript">
+        document.onkeydown = function (e) {
+            if (event.keyCode == 123) {
+                return false;
+            }
+            if (e.ctrlKey && e.shiftKey && e.keyCode == 'I'.charCodeAt(0)) {
+                return false;
+            }
+            if (e.ctrlKey && e.shiftKey && e.keyCode == 'J'.charCodeAt(0)) {
+                return false;
+            }
+            if (e.ctrlKey && e.keyCode == 'U'.charCodeAt(0)) {
+                return false;
+            }
+        }
+    </script>
+    <script language="JavaScript" type="text/javascript">
+        //Message to display whenever right click on website
+        var message = "Sorry, Right Click have been disabled.";
+        function click(e) {
+            if (document.all) {
+                if (event.button == 2 || event.button == 3) {
+                    alert(message);
+                    return false;
+                }
+            }
+            else {
+                if (e.button == 2 || e.button == 3) {
+                    e.preventDefault();
+                    e.stopPropagation();
+                    alert(message);
+                    return false;
+                }
+            }
+        }
+        if (document.all) {
+            document.onmousedown = click;
+        }
+        else {
+            document.onclick = click;
+        }
+    </script>
+    <noscript>
+        <style type="text/css">
+            .hidden
+            {
+                display: none;
+            }
+        </style>
+        You don't have javascript enabled. Please Enable Javascript and Continue to use
+        Application.
+        
+    </noscript>
+    <script type="text/javascript"> 
+<!--
+        //Disable select-text script (IE4+, NS6+)
+        //visit http://www.rainbow.arch.scriptmania.com/scripts/ 
+        /////////////////////////////////// 
+        function disableselect(e) {
+            return false
+        }
+        function reEnable() {
+            return true
+        }
+        //if IE4+
+        document.onselectstart = new Function("return false")
+        //if NS6
+        if (window.sidebar) {
+            document.onmousedown = disableselect
+            document.onclick = reEnable
+        }
+    // -->
+    </script>
+    <script type="text/javascript">
+        window.history.forward(1);
+        function noBack() { window.history.forward(1); }
+    </script>
+    <script type="text/javascript"> 
+<!--
+        //Disable right click script 
+        //visit http://www.rainbow.arch.scriptmania.com/scripts/ 
+        var message = "Sorry, right-click has been disabled";
+        /////////////////////////////////// 
+        function clickIE() { if (document.all) { (message); return false; } }
+        function clickNS(e) {
+            if
+(document.layers || (document.getElementById && !document.all)) {
+                if (e.which == 2 || e.which == 3) { (message); return false; }
+            }
+        }
+        if (document.layers)
+        { document.captureEvents(Event.MOUSEDOWN); document.onmousedown = clickNS; }
+        else { document.onmouseup = clickNS; document.oncontextmenu = clickIE; }
+        document.oncontextmenu = new Function("return false")
+    // --> 
+    </script>
+    <script type="text/javascript">
+        document.onkeydown = function (e) {
+            if (event.keyCode == 123) {
+                return false;
+            }
+            if (e.ctrlKey && e.shiftKey && e.keyCode == 'I'.charCodeAt(0)) {
+                return false;
+            }
+            if (e.ctrlKey && e.shiftKey && e.keyCode == 'J'.charCodeAt(0)) {
+                return false;
+            }
+            if (e.ctrlKey && e.keyCode == 'U'.charCodeAt(0)) {
+                return false;
+            }
+        }
+    </script>
+    <script type="text/javascript">
+        document.onkeypress = function (event) {
+            event = (event || window.event); if (event.keyCode == 123) {
+                //alert('No F-12');
+                return false;
+            }
+        }
+        document.onmousedown = function (event) {
+            event = (event || window.event); if (event.keyCode == 123) {
+                //alert('No F-keys');
+                return false;
+            }
+        }
+        document.onkeydown = function (event) {
+            event = (event || window.event); if (event.keyCode == 123) {
+                //alert('No F-keys');
+                return false;
+            }
+        }
+
+
+        //document.oncontextmenu=new Function return false // 
+        function disableCtrlKeyCombination(e) {
+            //list all CTRL + key combinations you want to disable 
+            var forbiddenKeys = new Array('a', 'n', 'c', 'i', 'x', 'j', 'w','U','u');
+            var key; var isCtrl; if (window.event) {
+                key = window.event.keyCode;
+                //IE
+                if (window.event.ctrlKey) isCtrl = true; else isCtrl = false;
+            } else {
+                key = e.which;
+                //firefox 
+                if (e.ctrlKey) isCtrl = true; else isCtrl = false;
+            }
+            //if ctrl is pressed check if other key is in forbidenKeys array 
+            if (isCtrl) {
+                for (i = 0; i < forbiddenKeys.length; i++) {
+                    //case-insensitive comparation 
+                    if (forbiddenKeys[i].toLowerCase() == String.fromCharCode(key).toLowerCase()) {
+                        //alert('Key combination CTRL + ' + String.fromCharCode(key) + ' has been disabled.');
+                        return false;
+                    }
+                }
+            } return true;
+        } </script>
+    <script type="text/javascript">
+        var isNS = (navigator.appName == "Netscape") ? 1 : 0;
+
+        if (navigator.appName == "Netscape") document.captureEvents(Event.MOUSEDOWN || Event.MOUSEUP);
+
+        function mischandler() {
+            return false;
+        }
+
+        function mousehandler(e) {
+            var myevent = (isNS) ? e : event;
+            var eventbutton = (isNS) ? myevent.which : myevent.button;
+            if ((eventbutton == 2) || (eventbutton == 3)) return false;
+        }
+        document.oncontextmenu = mischandler;
+        document.onmousedown = mousehandler;
+        document.onmouseup = mousehandler;
+
+    </script>
+     <title>
+
+</title><meta http-equiv="X-UA-Compatible" content="IE=Edge"><meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"><meta name="description" content="State Scholarship Portal | Postmatric | Government of Karnataka"><meta name="keywords"><meta name="author"><link rel="shortcut icon" type="image/png" href="https://ssp.postmatric.karnataka.gov.in/images/ssptico25.png">
+  <!--[if lt IE 9]>
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+  <![endif]-->
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" type="text/css" href="https://ssp.postmatric.karnataka.gov.in/css/bootstrap.min.css"><link rel="stylesheet" type="text/css" href="https://ssp.postmatric.karnataka.gov.in/css/font-awesome.min.css"><link rel="stylesheet" type="text/css" href="https://ssp.postmatric.karnataka.gov.in/css/etlinefont.css"><link rel="stylesheet" type="text/css" href="https://ssp.postmatric.karnataka.gov.in/css/elegant-font-icon.css"><link rel="stylesheet" type="text/css" href="https://ssp.postmatric.karnataka.gov.in/css/flexslider.css"><link rel="stylesheet" type="text/css" href="https://ssp.postmatric.karnataka.gov.in/css/owl.carousel.css"><link rel="stylesheet" type="text/css" href="https://ssp.postmatric.karnataka.gov.in/css/animate.css"><link rel="stylesheet" type="text/css" href="https://ssp.postmatric.karnataka.gov.in/css/style.css">
+  
+  <script src="https://ssp.postmatric.karnataka.gov.in/js/jsencrypt.min.js" type="text/javascript"></script>
+  <script type="text/javascript" src="https://ssp.postmatric.karnataka.gov.in/js/jquery.min.js"></script>
+<script type="text/javascript" src="https://ssp.postmatric.karnataka.gov.in/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="https://ssp.postmatric.karnataka.gov.in/css/bootstrapValidator.css"></script>
+    <script type="text/javascript" src="https://ssp.postmatric.karnataka.gov.in/js/bootstrapValidator.min.js"></script>
+
+   <!-- Google Fonts -->
+  
+  <link href="https://ssp.postmatric.karnataka.gov.in/css/googlefonts.css" rel="Stylesheet" type="text/css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+     <script src="https://ssp.postmatric.karnataka.gov.in/scripts/chartbundle.js"></script>
+	<script src="https://ssp.postmatric.karnataka.gov.in/scripts/utils.js"></script>
+<script type="text/ecmascript">
+    $(document).ready(function () {
+
+        $("#owl-demo").owlCarousel({
+            autoPlay:true,
+            autoPlayTimeout:2000,
+            autoPlayHoverPause:true,
+            navigation: false, // Show next and prev buttons
+            slideSpeed: 300,
+            paginationSpeed: 400,
+            singleItem: true
+
+            // "singleItem:true" is a shortcut for:
+            // items : 1, 
+            // itemsDesktop : false,
+            // itemsDesktopSmall : false,
+            // itemsTablet: false,
+            // itemsMobile : false
+
+        });
+
+    });
+</script>
+<style>
+.logoimg
+{
+	width:200px !important;
+}
+#owl-demo .item img{
+    display: block;
+    width: 100%;
+    height: auto;
+}
+.smallh5{
+    float: right;
+    margin-top: 10px;
+}
+
+.h5small
+{
+	display:inline-block;
+}
+
+small i
+{
+	font-size:30px;
+}
+.text-heading{
+    font-size:20px;
+}
+.panel-body
+{
+	padding:0px !important;
+}
+.icon-box-4 .sub-info{
+    color:#095798;
+}
+
+	canvas {
+		-moz-user-select: none;
+		-webkit-user-select: none;
+		-ms-user-select: none;
+	}
+
+    .marquee {
+  /*width: 300px;*/
+  height:100px;
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background: #fff;
+}
+</style>
+</head>
+<body onkeypress="return disableCtrlKeyCombination(event);" onkeydown="return disableCtrlKeyCombination(event);" oncontextmenu="return false;" onselectstart="return false;" ondragstart="return false;" onload="load();">
+    <form name="form1" method="post" action="https://ssp.postmatric.karnataka.gov.in/" id="form1">
+<div>
+<input type="hidden" name="ToolkitScriptManager1_HiddenField" id="ToolkitScriptManager1_HiddenField" value="">
+<input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="">
+<input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="">
+<input type="hidden" name="__LASTFOCUS" id="__LASTFOCUS" value="">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="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">
+</div>
+
+<script type="text/javascript">
+//<![CDATA[
+var theForm = document.forms['form1'];
+if (!theForm) {
+    theForm = document.form1;
+}
+function __doPostBack(eventTarget, eventArgument) {
+    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+        theForm.__EVENTTARGET.value = eventTarget;
+        theForm.__EVENTARGUMENT.value = eventArgument;
+        theForm.submit();
+    }
+}
+//]]>
+</script>
+
+
+<script src="https://ssp.postmatric.karnataka.gov.in/WebResource.axd?d=rb0LYKwnrnv5YBpl8SZkWyH1yQhXtCQ9zAqE2NfQ90qRMyp25k3iybUFx_0aaT5ER80EgETQlilUtiU1OgZMBg1oSWI1&amp;t=636940151749177621" type="text/javascript"></script>
+
+
+<script src="https://ssp.postmatric.karnataka.gov.in/ScriptResource.axd?d=1fCV_ddwDIeY46ChFxWdwFSEcE3gs581EQN7lADgcXAVr2lzNszPy7fEt-m4y7tg0P8nLuoKv36gVSCqcd2Ti-RNqXYEMxdUpOPzTHNPI7zz8wSC0&amp;t=ffffffffec54f2d7" type="text/javascript"></script>
+<script src="https://ssp.postmatric.karnataka.gov.in/ScriptResource.axd?d=KUPrYVYSHOQ8gOQ7ZIj3_ZFs5ePgid0NeA9uJGGHmdolyk-JCpX8WyeFe1nJIzFDhjcmFHwWVwPSVURlgkitaEkGsMyFvL0b0NZY8lgsUHy4ZLxl3ida-BHR2Hy3xuBoGu4n-Q2&amp;t=ffffffffec54f2d7" type="text/javascript"></script>
+<div>
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="7E21AFCE">
+	<input type="hidden" name="__VIEWSTATEENCRYPTED" id="__VIEWSTATEENCRYPTED" value="">
+	<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="HNFmJC4pUeDYV8lZ0YPA6jotPOn09ymRY0oZ8VK1bKzdPjthrAaieOQoIsxv8IiQUjJfPJ79DAJIRSUUgPqRhLge5JwWNucFnKXA9yuVtxQgLIzdbAnJZ/H1KcOQjgdmRoTK23HwYC0iENNc535E5LCZX7ROKlLMeWIzJ8g3bPqGmLlB">
+</div>
+    
+         <script type="text/javascript">
+//<![CDATA[
+Sys.WebForms.PageRequestManager._initialize('ctl00$ToolkitScriptManager1', 'form1', [], [], [], 90, 'ctl00');
+//]]>
+</script>
+
+     <!-- Header -->
+  <!-- Navigation -->
+  <nav class="navbar-inverse navbar-static">
+  <div class="container">
+    <div class="navbar-header">
+		<button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".js-navbar-collapse">
+			<span class="sr-only">Toggle navigation</span>
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+		</button>
+		<a class="navbar-brand" href="https://ssp.postmatric.karnataka.gov.in/homepage.aspx"><span><img src="https://ssp.postmatric.karnataka.gov.in/images/kar_logo.png" width="50px"></span> ರಾಜ್ಯ ವಿದ್ಯಾರ್ಥಿವೇತನ ತಂತ್ರಾಂಶ</a>
+
+	</div>
+	
+	
+	<div class="collapse navbar-collapse js-navbar-collapse">
+		<ul class="nav navbar-nav">
+			
+
+
+			
+            <li><a href="https://ssp.postmatric.karnataka.gov.in/LoginPage.aspx">ಇಲಾಖೆ  ಲಾಗಿನ್‍ <i class=" icon-lock"></i></a></li>
+            
+
+
+          
+            
+		</ul>
+         <ul class="nav navbar-nav navbar-right">
+              <li class="top-spacing"><select name="ctl00$ddlLanguages" onchange="javascript:setTimeout(&#39;__doPostBack(\&#39;ctl00$ddlLanguages\&#39;,\&#39;\&#39;)&#39;, 0)" id="ddlLanguages" class="form-control">
+	<option selected="selected" value="kn-IN">ಕನ್ನಡ</option>
+	<option value="en-US">English</option>
+
+</select></li>
+</ul>
+        
+		
+	</div><!-- /.nav-collapse -->
+    </div>
+</nav>
+
+  <!-- End Header -->
+        
+  
+<div class="container top-spacing">
+<div class="row">
+<div class="col-md-8">
+<div id="owl-demo" class="owl-carousel owl-theme">
+ 
+ <div class="item">
+ <img id="ContentPlaceHolder1_slide1" src="https://ssp.postmatric.karnataka.gov.in/images/testimonials/scholarshipslide.jpg" alt="Karnataka Scholarship" style="border-width:0px;">
+ </div>
+  <div class="item"><a href="https://ssp.postmatric.karnataka.gov.in/home.aspx">
+  <img id="ContentPlaceHolder1_slide2" src="https://ssp.postmatric.karnataka.gov.in/images/testimonials/scholarships.jpg" alt="scholarships" style="border-width:0px;">
+  </a></div>
+ </div>
+
+
+ </div>
+   <div class="col-md-4 col-sm-12">
+      
+            
+					<div class="list-group">
+
+ 
+  <a href="https://ssp.postmatric.karnataka.gov.in/#" class="list-group-item list-group-item-action list-group-item-info flex-column align-items-start">
+    <div class="d-flex w-100 justify-content-between">
+      <h5 class="mb-1 h5small">ಮೆಟ್ರಿಕ್‌ ನಂತರ ವಿದ್ಯಾರ್ಥಿವೇತನ ಅರ್ಜಿಗಾಗಿ ಅಗತ್ಯವಿರುವ ಮಾಹಿತಿಗಳು/ದಾಖಲೆಗಳು:</h5>
+      <small class="text-muted smallh5"><i class="icon-document"></i></small>
+    </div>
+        <p class="mb-1"> ವಿದ್ಯಾರ್ಥಿಗಳ ಎಸ್.ಎ.ಟಿ.ಎಸ್‌ ಗುರುತಿನ ಸಂಖ್ಯೆ / ಕಾಲೇಜು ನೋಂದಣಿ ಸಂಖ್ಯೆ</p>
+    <p class="mb-1">  ವಿದ್ಯಾರ್ಥಿ ಮತ್ತು ಪೋಷಕರ ಆಧಾರ್‌ ಸಂಖ್ಯೆ</p>
+
+    <p class="mb-1"> ವಿದ್ಯಾರ್ಥಿಯ ಮೊಬೈಲ್‌ ಸಂಖ್ಯೆ</p>
+
+    <p class="mb-1"> ವಿದ್ಯಾರ್ಥಿಯ ಹೆಸರಿನಲ್ಲಿರುವ ಆರ್.ಡಿ ಯಿಂದ ಶುರುವಾಗುವ ಜಾತಿ / ಆದಾಯ / ಆರ್ಥಿಕವಾಗಿ ದುರ್ಬಲ ವಿಭಾಗದ (ಬ್ರಾಹ್ಮಣ ವರ್ಗದ ವಿದ್ಯಾರ್ಥಿಗಳಿಗೆ ಮಾತ್ರ) ಪ್ರಮಾಣ ಪತ್ರಗಳ ಸಂಖ್ಯೆ(RD- - - - - - - - - - - - -)</p>
+    <p class="mb-1"> ಇ-ದೃಢೀಕರಿಸಿದ ದಾಖಲೆಗಳ ಸಂಖ್ಯೆಗಳು</p>
+    <p class="mb-1">ದಿವ್ಯಾಂಗ ವಿದ್ಯಾರ್ಥಿಯಾಗಿದ್ದಲ್ಲಿ ಭಾರತ ಸರ್ಕಾರದಿಂದ ನೀಡಿರುವ ಅಂಗವೈಕಲ್ಯ ಕಾರ್ಡ್ ಸಂಖ್ಯೆ</p>
+  
+  </a>
+</div>
+		  
+				
+			
+       </div>
+ </div>
+ </div>
+
+        
+
+    <div style="margin:10px">
+       <div class="container">
+             <div class="row">
+        <div class="col-md-12" style="font-size:23px;">
+             <div class="well text-left"><a style="color:red !important" href="https://ssp.postmatric.karnataka.gov.in/2021"><img src="https://ssp.postmatric.karnataka.gov.in/Images/new.gif" height="25" width="50">&nbsp;&nbsp; 2020-21ನೇ ಸಾಲಿನ ಪೋಸ್ಟ್ ಮೆಟ್ರಿಕ್ ವಿದ್ಯಾರ್ಥಿವೇತನಕ್ಕೆ ಅರ್ಜಿ ಸಲ್ಲಿಸಲು ಇಲ್ಲಿ ಕ್ಲಿಕ್ ಮಾಡಿ</a>
+  <p><a style="color:red !important" href="https://ssp.postmatric.karnataka.gov.in/docs/Knsspinstructions.pdf" target="_blank" class="">
+                         <img src="https://ssp.postmatric.karnataka.gov.in/Images/new.gif" width="50">&nbsp;&nbsp; 2020-21ನೇ ಸಾಲಿನ ಮೆಟ್ರಿಕ್ ನಂತರದ ವಿದ್ಯಾರ್ಥಿವೇತನಕ್ಕೆ ಅರ್ಜಿ ಸಲ್ಲಿಸುವ ಕುರಿತು ವಿದ್ಯಾರ್ಥಿಗಳಿಗೆ ಸೂಚನೆಗಳು</a></p>
+<p><a style="color:red !important" href="https://ssp.postmatric.karnataka.gov.in/docs/knSchEligibility.pdf" target="_blank" class="">
+                      <img src="https://ssp.postmatric.karnataka.gov.in/Images/new.gif" width="50">&nbsp;&nbsp;  2020-21ನೇ ಸಾಲಿನ ವಿದ್ಯಾರ್ಥಿವೇತನ ಅರ್ಹತಾ ಮಾನದಂಡ</a></p>
+</div>
+              </div>
+    </div>
+
+            <div id="ContentPlaceHolder1_Div1" class="col-md-12 marquee alert alert-danger" style="height: 100px;"><div class="js-marquee-wrapper" style="margin-top: 68px; animation: 10.3529s linear 0s infinite normal none running marqueeAnimation-5890912;"><div class="js-marquee" style="margin-right: 0px; float: none; margin-bottom: 0px;">
+             
+             ಆತ್ಮೀಯ ಅರ್ಜಿದಾರರೇ, ನಿಮ್ಮ ಬಳಿ ಜಾತಿ / ಆದಾಯ / ಇ.ಡಬ್ಲ್ಯೂ.ಎಸ್. ಆರ್.ಡಿ  
+
+ಪ್ರಮಾಣಪತ್ರವಿಲ್ಲದಿದ್ದರೆ,ದಯವಿಟ್ಟು 
+               <a href="https://nadakacheri.karnataka.gov.in/Online_service_Public/loginpage.aspx" target="_blank">Nadakacheri </a>  
+                ಲಿಂಕ್ ಅನ್ನು ಕ್ಲಿಕ್ ಮಾಡುವ ಮೂಲಕ ಸದರಿ ಪ್ರಮಾಣಪತ್ರಗಳಿಗಾಗಿ ಆನ್‌ಲೈನ್‌ ಮುಖಾಂತರ ಅರ್ಜಿ ಸಲ್ಲಿಸಿ ಹಾಗೂ  ಸ್ವೀಕೃತಿ ಪ್ರತಿಯಲ್ಲಿ ಉಲ್ಲೇಖಿಸಲಾಗಿರುವ ಆರ್.ಡಿ ಸಂಖ್ಯೆಯನ್ನು ಎಸ್.ಎಸ್.ಪಿ ಯಲ್ಲಿ ಸಲ್ಲಿಸಿ  ನಿಮ್ಮ ಖಾತೆ ಸೃಜನೆ ಪ್ರಕ್ರಿಯೆಯನ್ನು ಪೂರ್ಣಗೊಳಿಸಿ. ಅರ್ಜಿ ಸಲ್ಲಿಸಲು   ಪ್ರಮಾಣಪತ್ರಗಳನ್ನು ನೀವು ಪಡೆಯುವವರೆಗೆ ಕಾಯಬೇಕಾಗಿಲ್ಲ. 
+              </div><style>@-webkit-keyframes marqueeAnimation-5890912  { 100%  {margin-top:-60px}}</style></div></div>
+        
+
+           <div id="ContentPlaceHolder1_scrollid" style="display:none">
+          <div id="ContentPlaceHolder1_scrollcontent" class="col-md-12 marquee alert alert-danger" style="height: 100px;"><div class="js-marquee-wrapper" style="margin-top: 68px; animation: 5.5s linear 0s infinite normal none running marqueeAnimation-2164334;"><div class="js-marquee" style="margin-right: 0px; float: none; margin-bottom: 0px;">ಸಹಾಯವಾಣಿ
+: 080 - 44554455 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ರಾಜ್ಯ ವಿದ್ಯಾರ್ಥಿವೇತನ ತಂತ್ರಾಂಶ (ಮೆಟ್ರಿಕ್ ನಂತರ)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ಪ್ರಿಯ ಅರ್ಜಿದಾರರೇ ಮೆಟ್ರಿಕ್ ನಂತರದ ವಿದ್ಯಾರ್ಥಿವೇತನವನ್ನು ಪಡೆಯಲು ದಯವಿಟ್ಟು ನಿಮ್ಮ ಆಧಾರ್ ಸಂಖ್ಯೆಯನ್ನು ನಿಮ್ಮ ಬ್ಯಾಂಕ್ ಖಾತೆಗೆ ಹಾಗೂ NPCI ಗೆ ಜೋಡಣೆ ಮಾಡಿಸಿಕೊಳ್ಳಿ. ಈ ಕುರಿತಂತೆ ಆಧಾರ್ ಜೋಡಣೆಯಾಗದ ಅರ್ಜಿದಾರರ ನೋಂದಾಯಿತ ಮೊಬೈಲ್ ಸಂಖ್ಯೆಗೆ SMS ಅನ್ನು ಕೂಡ ಕಳುಹಿಸಲಾಗುತ್ತಿದೆ. ದಯವಿಟ್ಟು ಕೂಡಲೇ ನಿಮ್ಮ ಬ್ಯಾಂಕಿಗೆ ಭೇಟಿ ನೀಡಿ ನಿಮ್ಮ ಆಧಾರ್ ಅನ್ನು NPCI ಗೆ ಜೋಡಣೆ ಮಾಡಿಸಿ.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ಅಲ್ಪ ಸಂಖ್ಯಾತ ವಿದ್ಯಾರ್ಥಿಗಳಿಗೆ ಎಸ್‌ಎಸ್‌ಪಿಯಲ್ಲಿ ಪೋಸ್ಟ್ ಮೆಟ್ರಿಕ್ ವಿದ್ಯಾರ್ಥಿವೇತನಕ್ಕಾಗಿ ಅರ್ಜಿ ಸಲ್ಲಿಸಲು ಕೊನೆಯ ದಿನಾಂಕವನ್ನು 31 ಮಾರ್ಚ್ 2020 ರವರೆಗೆ ವಿಸ್ತರಿಸಲಾಗಿದೆ&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ಮೆಟ್ರಿಕ್ ನಂತರದ ವಿದ್ಯಾರ್ಥಿವೇತನಕ್ಕೆ ಅರ್ಜಿ ಸಲ್ಲಿಸುವ ಪ್ರಕ್ರಿಯೆಯಲ್ಲಿ ನೀವು ಯಾವುದೇ ತಾಂತ್ರಿಕ ಸಮಸ್ಯೆ ಎದುರಿಸುತ್ತಿದ್ದಲ್ಲಿ ರಾಜ್ಯ ವಿದ್ಯಾರ್ಥಿವೇತನ ತಂತ್ರಾಂಶ ಸಹಾಯವಾಣಿ 08035254757 ಗೆ ಕರೆ ಮಾಡಿ&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div><style>@-webkit-keyframes marqueeAnimation-2164334  { 100%  {margin-top:-0px}}</style></div></div>
+        </div>
+
+      <div class="row">
+       
+       
+          <div class="col-md-12">
+ 
+  <div class="panel-group">
+    <div class="panel panel-default">
+      <div class="panel-heading" style="color: #e20d0d; background-color: #fff;">
+        <h4 class="panel-title">
+          <a data-toggle="collapse" href="https://ssp.postmatric.karnataka.gov.in/#collapse1" style="font-weight:600">ವಿದ್ಯಾರ್ಥಿವೇತನಕ್ಕೆ ಅರ್ಜಿ ಸಲ್ಲಿಸುವ ಪ್ರಕ್ರಿಯೆ</a>
+        </h4>
+      </div>
+      <div id="collapse1" class="panel-collapse">
+        <div class="panel-body">
+            <ul>
+                <li>ನೋಂದಣಿ (ಒಮ್ಮೆ ಮಾತ್ರ) - ಈ ಹಿಂದಿನ ವರ್ಷದಲ್ಲಿ SSP ಮೂಲಕ ವಿದ್ಯಾರ್ಥಿವೇತನ ಪಡೆದಿದ್ದಲ್ಲಿ ನೋಂದಣಿ ಪ್ರಕ್ರಿಯೆ ಅಗತ್ಯವಿಲ್ಲ</li>
+                <li>ರಾಜ್ಯ ವಿದ್ಯಾರ್ಥಿವೇತನ ತಂತ್ರಾಂಶದಲ್ಲಿ ಲಾಗಿನ್ ಆಗಿ ಇ-ದೃಢೀಕರಣ ಹಂತದವರೆಗೆ ಅರ್ಜಿಯನ್ನು ಸಲ್ಲಿಸಬೇಕು</li>
+                <li>ಕಾಲೇಜಿನ ಇ-ದೃಢೀಕರಣ ಅಧಿಕಾರಿಗಳಿಂದ ತಮ್ಮ ದಾಖಲೆಗಳನ್ನು ಇ-ದೃಢೀಕರಣ  ಮಾಡಿ ಮತ್ತು ಇ-ದೃಢೀಕರಣ ಐಡಿಯನ್ನು ಪಡೆಯಬೇಕು</li>
+                <li>ರಾಜ್ಯ ವಿದ್ಯಾರ್ಥಿವೇತನ ತಂತ್ರಾಂಶದಲ್ಲಿ ಲಾಗಿನ್ ಆಗಿ ಇ-ದೃಢೀಕರಣ ಐಡಿಗಳನ್ನು ನಮೂದಿಸಿ ಮತ್ತು ಅರ್ಜಿ ಸಲ್ಲಿಕೆಯ ಪ್ರಕ್ರಿಯೆಯನ್ನು ಪೂರ್ಣಗೊಳಿಸಿ</li>
+            </ul>
+
+        </div>
+       
+      </div>
+    </div>
+  </div>
+              </div>
+</div>
+
+            <div class="row">
+          <div class="col-md-12">
+             <div class="alert text-danger">ಪ್ರಿಯ ಅರ್ಜಿದಾರರೇ ಮೆಟ್ರಿಕ್ ನಂತರದ ವಿದ್ಯಾರ್ಥಿವೇತನವನ್ನು ಪಡೆಯಲು ದಯವಿಟ್ಟು ನಿಮ್ಮ ಆಧಾರ್ ಸಂಖ್ಯೆಯನ್ನು ನಿಮ್ಮ ಬ್ಯಾಂಕ್ ಖಾತೆಗೆ ಜೋಡಣೆ ಮಾಡಿಸಿಕೊಳ್ಳಿ. ದಯವಿಟ್ಟು ಕೂಡಲೇ ನಿಮ್ಮ ಬ್ಯಾಂಕಿಗೆ ಭೇಟಿ ನೀಡಿ ನಿಮ್ಮ ಆಧಾರ್ ಅನ್ನು NPCI ಗೆ ಜೋಡಣೆ ಮಾಡಿಸಿ.  </div>
+              </div>
+        </div>
+
+             <div class="row">
+          <div class="col-md-12">
+             <div class="alert alert-info">ಎಸ್‌ಸಿ, ಎಸ್‌ಟಿ, ಅಲ್ಪಸಂಖ್ಯಾತ, ಬ್ರಾಹ್ಮಣ (EWS), ಹಿಂದುಳಿದ ವರ್ಗಗಳು, ರಕ್ಷಣಾ ಸಿಬ್ಬಂದಿಯ ಸಂಬಂಧಿ ಮತ್ತು ವಿಕಲಚೇತನ ವಿದ್ಯಾರ್ಥಿಗಳು ಈ ಪೋರ್ಟಲ್ ಮೂಲಕ ಅರ್ಜಿ ಸಲ್ಲಿಸಬೇಕು. </div>
+              </div>
+        </div>
+
+
+            <div class="row">
+        <div class="col-md-12">
+             <div class="alert alert-success "><a href="https://resident.uidai.gov.in/bank-mapper">ಬ್ಯಾಂಕಿನೊಂದಿಗೆ ನಿಮ್ಮ ಆಧಾರ್ ಜೋಡಣೆಯನ್ನು ಪರಿಶೀಲಿಸಲು ಇಲ್ಲಿ ಕ್ಲಿಕ್ ಮಾಡಿ</a></div>
+              </div>
+    </div>
+
+           
+
+   
+
+           <div class="row" style="display:none">
+          <div class="col-md-12">
+             <div class="alert alert-info">ವಿದ್ಯಾರ್ಥಿವೇತನಕ್ಕೆ ಅರ್ಜಿ ಸಲ್ಲಿಸುವ ಮೊದಲು, ವಿದ್ಯಾರ್ಥಿಗಳು ತಮ್ಮ ದಾಖಲೆಗಳನ್ನು ತಮ್ಮ ಕಾಲೇಜಿನ ಇ-ದೃಢೀಕರಣ ಅಧಿಕಾರಿಗಳಿಂದ ಇ-ದೃಢೀಕರಿಸಿಕೊಂಡು ಇ-ಅಟೆಸ್ಟೇಷನ್ ಐಡಿ ಪಡೆಯಬೇಕು. ದಾಖಲೆಗಳನ್ನು ದೃಢೀಕರಿಸಿಕೊಳ್ಳಲು ದಯವಿಟ್ಟು ಕೆಳಗೆ ನೀಡಿರುವ ಲಿಂಕ್‌ಗೆ ಭೇಟಿ ನೀಡಿ. </div>
+              </div>
+        </div>
+
+         <div class="row">
+       
+       
+          <div class="col-md-12">
+                            <ul class="icon-box-4">
+                                <li class="col-md-6 col-sm-6 col-xs-6 alert-danger text-center ">
+                                  
+                                    <a href="http://eattestation.ssp.karnataka.gov.in/postmatric" class="text-heading text-primary" target="_blank">ಇ-ದೃಢೀಕರಣ ಪೋರ್ಟಲ್ ಗಾಗಿ ಇಲ್ಲಿ ಕ್ಲಿಕ್ ಮಾಡಿ</a>
+                                    <p id="ContentPlaceHolder1_P1" class="sub-info">(ವಿದ್ಯಾರ್ಥಿಗಳು)</p>
+                                </li>
+                                <li class="col-md-6 col-sm-6 col-xs-6 alert-warning text-center ">
+                                  
+                                    <a href="http://esign.ssp.karnataka.gov.in/esign_engine/" class="text-heading text-primary" target="_blank">ಇ-ದೃಢೀಕರಣ ಪೋರ್ಟಲ್ ಗಾಗಿ ಇಲ್ಲಿ ಕ್ಲಿಕ್ ಮಾಡಿ </a>
+                                    <p id="ContentPlaceHolder1_P2" class="sub-info">(ಇ-ದೃಢೀಕರಣ ಅಧಿಕಾರಿಗಳು)</p>
+                                </li>
+                                </ul>
+              </div>
+           </div>
+           </div>
+        </div>
+
+<!-- BLOG TITLE -->
+
+      
+            
+            
+        
+
+  <!-- BLOG TITLE  END -->
+ <!-- ICON BOX STYLE FOUR -->		
+      <div>
+       <div class="container">
+       
+       
+       
+       
+       
+       
+       
+        </div>
+      </div>
+
+      <!-- ICON BOX STYLE FOUR END -->
+    
+
+
+       <div id="schemesdiv">
+       <div class="container">
+       <div class="row">
+      
+      <div class="col-md-12">
+      <h3>ಯೋಜನೆಗಳು </h3>
+            <div class="panel with-nav-tabs panel-info">
+                <div class="panel-heading">
+                        <ul class="nav nav-tabs">
+                            <li class="active"><a href="https://ssp.postmatric.karnataka.gov.in/#tab1info" data-toggle="tab">ಸಮಾಜ ಕಲ್ಯಾಣ ಇಲಾಖೆ</a></li>
+                            <li><a href="https://ssp.postmatric.karnataka.gov.in/#tab2info" data-toggle="tab">ಪರಿಶಿಷ್ಟ ಪಂಗಡಗಳ ಕಲ್ಯಾಣ ಇಲಾಖೆ</a></li>
+                            <li><a href="https://ssp.postmatric.karnataka.gov.in/#tab3info" data-toggle="tab">ಹಿಂದುಳಿದ ವರ್ಗಗಳ ಕಲ್ಯಾಣ ಇಲಾಖೆ</a></li>
+                            <li><a href="https://ssp.postmatric.karnataka.gov.in/#tab4info" data-toggle="tab">ಅಲ್ಪಸಂಖ್ಯಾತರ ಕಲ್ಯಾಣ ಇಲಾಖೆ</a></li>
+                             <li><a href="https://ssp.postmatric.karnataka.gov.in/#tab5info" data-toggle="tab">ತಾಂತ್ರಿಕ ಶಿಕ್ಷಣ ಇಲಾಖೆ</a></li>
+                            <li><a href="https://ssp.postmatric.karnataka.gov.in/#tab6info" data-toggle="tab">ವೈದ್ಯಕೀಯ ಶಿಕ್ಷಣ ಇಲಾಖೆ</a></li>
+                            <li><a href="https://ssp.postmatric.karnataka.gov.in/#tab7info" data-toggle="tab">ಕರ್ನಾಟಕ ರಾಜ್ಯ ಬ್ರಾಹ್ಮಣ ಅಭಿವೃದ್ಧಿ ಮಂಡಳಿ</a></li>
+                            
+                        </ul>
+                </div>
+                <div class="panel-body">
+                    <div class="tab-content">
+                        <div class="tab-pane fade in active" id="tab1info">
+
+                                <div>
+	<table class="table table-bordered table-striped" cellspacing="0" rules="all" border="1" id="ContentPlaceHolder1_grdDept1" style="border-collapse:collapse;">
+		<tbody><tr>
+			<td align="left" style="font-weight:bold;">Post-Matric Scholarship for SC Students</td><td align="left" style="font-weight:bold;">ಮೆಟ್ರಿಕ್ ನಂತರದ ವಿದ್ಯಾರ್ಥಿವೇತನ </td>
+		</tr>
+	</tbody></table>
+</div>
+                       
+                        </div>
+                        <div class="tab-pane fade" id="tab2info">
+                        <div>
+	<table class="table table-bordered table-striped" cellspacing="0" rules="all" border="1" id="ContentPlaceHolder1_grdDept2" style="border-collapse:collapse;">
+		<tbody><tr>
+			<td align="left" style="font-weight:bold;">Post-Matric Scholarship for ST Students</td><td align="left" style="font-weight:bold;">ಪರಿಶಿಷ್ಟ ಪಂಗಡದ ವಿದ್ಯಾರ್ಥಿಗಳಿಗೆ ಮೆಟ್ರಿಕ್ ನಂತರದ ವಿದ್ಯಾರ್ಥಿವೇತನ</td>
+		</tr>
+	</tbody></table>
+</div>
+
+                        </div>
+                      <div class="tab-pane fade" id="tab3info">
+                        <div>
+	<table class="table table-bordered table-striped" cellspacing="0" rules="all" border="1" id="ContentPlaceHolder1_grdDept3" style="border-collapse:collapse;">
+		<tbody><tr>
+			<td align="left" style="font-weight:bold;">Vidyasiri</td><td align="left" style="font-weight:bold;">ವಿದ್ಯಾಸಿರಿ</td>
+		</tr><tr>
+			<td align="left" style="font-weight:bold;">Post-Matric Scholarship</td><td align="left" style="font-weight:bold;">ಮೆಟ್ರಿಕ್ ನಂತರದ ವಿದ್ಯಾರ್ಥಿವೇತನ </td>
+		</tr><tr>
+			<td align="left" style="font-weight:bold;">Fee Reimbursement</td><td align="left" style="font-weight:bold;">ಶುಲ್ಕ ಮರುಪಾವತಿ</td>
+		</tr>
+	</tbody></table>
+</div>
+                        </div>
+                        <div class="tab-pane fade" id="tab4info">
+                        <div>
+	<table class="table table-bordered table-striped" cellspacing="0" rules="all" border="1" id="ContentPlaceHolder1_grdDept4" style="border-collapse:collapse;">
+		<tbody><tr>
+			<td align="left" style="font-weight:bold;">Post-Matric Scholarship</td><td align="left" style="font-weight:bold;">ಮೆಟ್ರಿಕ್ ನಂತರದ ವಿದ್ಯಾರ್ಥಿವೇತನ </td>
+		</tr><tr>
+			<td align="left" style="font-weight:bold;">Merit Cum Means Scholarship</td><td align="left" style="font-weight:bold;">ಮೆರಿಟ್ ಕಮ್ ಮೀನ್ಸ್ ವಿದ್ಯಾರ್ಥಿವೇತನ </td>
+		</tr>
+	</tbody></table>
+</div>
+                        </div>
+
+                          <div class="tab-pane fade" id="tab5info">
+                        <div>
+	<table class="table table-bordered table-striped" cellspacing="0" rules="all" border="1" id="ContentPlaceHolder1_grdDept5" style="border-collapse:collapse;">
+		<tbody><tr>
+			<td align="left" style="font-weight:bold;">Fee Reimbursement for Engineering and Diploma in Engineering SC/ST Students </td><td align="left" style="font-weight:bold;">ಎಂಜಿನಿಯರಿಂಗ್ ಮತ್ತು ಡಿಪ್ಲೊಮಾ ಇನ್ ಎಂಜಿನಿಯರಿಂಗ್‌ ಎಸ್‌ಸಿ / ಎಸ್‌ಟಿ ವಿದ್ಯಾರ್ಥಿಗಳಿಗೆ ಶುಲ್ಕ ಮರುಪಾವತಿ</td>
+		</tr>
+	</tbody></table>
+</div>
+                        </div>
+                      
+                         <div class="tab-pane fade" id="tab6info">
+                        <div>
+	<table class="table table-bordered table-striped" cellspacing="0" rules="all" border="1" id="ContentPlaceHolder1_grdDept6" style="border-collapse:collapse;">
+		<tbody><tr>
+			<td align="left" style="font-weight:bold;">Fee Reimbursement for Medical SC/ST Students</td><td align="left" style="font-weight:bold;">ವೈದ್ಯಕೀಯ ಎಸ್‌ಸಿ / ಎಸ್‌ಟಿ ವಿದ್ಯಾರ್ಥಿಗಳಿಗೆ ಶುಲ್ಕ ಮರುಪಾವತಿ</td>
+		</tr>
+	</tbody></table>
+</div>
+                        </div>
+
+                         <div class="tab-pane fade" id="tab7info">
+                        <div>
+	<table class="table table-bordered table-striped" cellspacing="0" rules="all" border="1" id="ContentPlaceHolder1_grdDept7" style="border-collapse:collapse;">
+		<tbody><tr>
+			<td align="left" style="font-weight:bold;">Post-Matric Scholarship</td><td align="left" style="font-weight:bold;">ಮೆಟ್ರಿಕ್ ನಂತರದ ವಿದ್ಯಾರ್ಥಿವೇತನ </td>
+		</tr>
+	</tbody></table>
+</div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+        </div>
+        </div>
+     
+    <script type="text/javascript">
+	    var Departments = ['Approved', 'Paid'];
+		var color = Chart.helpers.color;
+		var barChartData2 = {
+		    labels: ['SWD', 'TWD','BCD','DOM'],
+			datasets: [{
+				label: 'Approved',
+				backgroundColor: color(window.chartColors.red).alpha(0.5).rgbString(),
+				borderColor: window.chartColors.red,
+				borderWidth: 1,
+				data: [
+                    ,
+					
+                     ,
+					,
+                    
+					
+				]
+			}, {
+				label: 'Paid',
+				backgroundColor: color(window.chartColors.blue).alpha(0.5).rgbString(),
+				borderColor: window.chartColors.blue,
+				borderWidth: 1,
+				data: [
+                    0,
+					0,
+                    0,
+                    0
+				]
+			}]
+
+		};
+
+		
+
+		
+
+		
+		
+	
+	   
+
+		window.onload = function() {
+			
+
+			var ctx2 = document.getElementById('canvas2').getContext('2d');
+			window.myBar = new Chart(ctx2, {
+			    type: 'bar',
+			    data: barChartData2,
+			    options: {
+			        responsive: true,
+			        legend: {
+			            position: 'top',
+			        },
+			        title: {
+			            display: true,
+			            text: 'Approved vs Paid Students Department wise '
+			        }
+			    }
+			});
+
+			
+
+		};
+
+		
+
+		var colorNames = Object.keys(window.chartColors);
+		
+	</script>
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/jquery.marquee/1.4.0/jquery.marquee.min.js"></script>
+    <script type="text/javascript">
+
+       
+        $('.marquee').marquee({
+            //speed in milliseconds of the marquee
+            duration: 5500,
+            //gap in pixels between the tickers
+            gap: 50,
+            //time in milliseconds before the marquee will start animating
+            delayBeforeStart: 0,
+            //'left' or 'right'
+            direction: 'up',
+            //true or false - should the marquee be duplicated to show an effect of continues flow
+            duplicated: false,
+            pauseOnHover: true
+        });
+    </script>
+
+    
+    
+
+<script type="text/javascript">
+//<![CDATA[
+(function() {var fn = function() {$get("ToolkitScriptManager1_HiddenField").value = '';Sys.Application.remove_init(fn);};Sys.Application.add_init(fn);})();//]]>
+</script>
+</form>
+     <!-- FOOTER -->
+<!-- FOOTER -->
+
+         <section class="bottom-padding-remover bg-warning">
+    <!-- ICON BOX STYLE THREE -->		
+  
+       <div class="container">
+       
+       <h2 class="title">ಸಹಾಯವಾಣಿ </h2>
+           <h4><span class="text-danger">080-35254757</span>  : help-desk for e-Attestation / Post Matric Scholarship queries.</h4>
+ <h4><span class="text-danger">email Id</span>  : postmatrichelp@karnataka.gov.in</h4>
+<hr>
+       
+       <div class="row">
+   
+      <div class="features">
+           
+         <div class="col-md-6 col-sm-6">
+                        <div class="feature-wrap">
+                           
+                            <h4>ಸಮಾಜ ಕಲ್ಯಾಣ ಇಲಾಖೆ</h4>
+                            <h5>9008400010 / 9008400078</h5>
+                        </div>
+                    </div>
+                    
+         <div class="col-md-6 col-sm-6">
+                        <div class="feature-wrap">
+
+                            <h4>ಪರಿಶಿಷ್ಟ ಪಂಗಡಗಳ ಕಲ್ಯಾಣ ಇಲಾಖೆ</h4>
+                            <h5>080-22261789</h5>
+                        </div>
+                    </div>
+                    
+        
+                    
+         <div class="col-md-6 col-sm-6">
+                        <div class="feature-wrap">
+                          
+                            <h4>ಅಲ್ಪಸಂಖ್ಯಾತರ ಕಲ್ಯಾಣ ಇಲಾಖೆ</h4>
+                            <h5>080-22535931</h5>
+                        </div>
+                    </div>
+                    
+         <div class="col-md-6 col-sm-6">
+                        <div class="feature-wrap">
+
+                            <h4>ಹಿಂದುಳಿದ ವರ್ಗಗಳ ಕಲ್ಯಾಣ ಇಲಾಖೆ</h4>
+                            <h5>080-8050770005</h5>
+                        </div>
+                    </div>
+                    
+        
+        
+   
+             </div> 
+           </div>
+       
+       
+        </div>
+    
+      </section>
+      <!-- ICON BOX STYLE FOUR END -->
+   
+  <footer>
+    
+    
+    <div class="rights">
+
+      <p>© 2019 ಇ-ಆಡಳಿತ ಕೇಂದ್ರ ಕರ್ನಾಟಕ ರಾಜ್ಯ ಸರ್ಕಾರ </p>
+    </div>
+    
+  </footer>
+  <!-- FOOTER END -->
+
+    </body></html>
