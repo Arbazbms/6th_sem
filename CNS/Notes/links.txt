@@ -1,0 +1,58 @@
+Introduction to Modern symmetric Key Ciphers.
+https://slideplayer.com/slide/7606449/
+
+1. https://drive.google.com/file/d/1u3ZLVxPiiNLkfI70dWDzPmR9yAfJp2SX/view?usp=sharing
+
+2. https://drive.google.com/file/d/1BzWS53TmBSmUT37dCNx8qToE5EwDoXFi/view?usp=drive_web&authuser=2
+
+3. https://drive.google.com/file/d/1sIpNz_RkoRxDw1UfTaz-qZtfmjUqTNGP/view?usp=sharing
+
+4. https://drive.google.com/file/d/1FGhKJBZVxtBl8urGSEDkMOrLyqfeHtaM/view?usp=sharing
+
+5. Topic covered: DES
+https://drive.google.com/file/d/1ABScpMYX2uwvtaeylI6of0cYuot2kZtQ/view?usp=sharing
+
+6. https://drive.google.com/file/d/1k2rt7q566Pa4Qoio5IZOqpyeUuyo7HcS/view?usp=drive_web&authuser=2
+
+Dear all,
+Document related to AES used in the class today.
+7. https://drive.google.com/file/d/1wrdghkf4EwSb8SClilZasYMvrt9F3yqF/view?usp=drive_web&authuser=2
+
+8. https://drive.google.com/file/d/1BY_LdAvuHQ2PXZYFbRCHzOrvv934xi0e/view?usp=drive_web&authuser=2
+
+9. Dear all,
+Video recording of today's class. (AES)
+https://drive.google.com/file/d/1dk4fQmCbK3bGBBd_B-BJVUatfmVRw_XX/view?usp=drive_web&authuser=2
+
+10. https://drive.google.com/file/d/1pWz2wIqX4RRX7_5atqqF_HrWly3hq_cr/view?usp=drive_web&authuser=2
+
+11. https://drive.google.com/file/d/1nCvDr2_NjHtd7jC2gjPSA1B-WAlw8ccQ/view?usp=drive_web&authuser=2
+
+12. https://drive.google.com/file/d/1jbjdhhcEgzwDQLf_SSQy3QFfVQx0Mi0Z/view?usp=drive_web&authuser=2
+
+13. Dear all,
+Video recording of today's tutorial along with the session by Prateek.
+Please make sure that you have completed all the 4 tasks of Tutorial by the end of the day today.
+
+https://drive.google.com/file/d/1eawUWHC8-viZKa8HoOZbn3zZinQgGX4l/view?usp=drive_web&authuser=2
+
+14. https://drive.google.com/file/d/1cZQeDKfbh8Xig95rcWqga21PINVgU279/view?usp=drive_web&authuser=2
+
+15. https://drive.google.com/file/d/1H7e5LYVwGXJWD3xlL6ldofTx5-GGZbTs/view?usp=drive_web&authuser=2
+
+16. https://drive.google.com/file/d/1eMWhwNq8PSyOw5XSWXFM_6YtyDaBN_R3/view?usp=drive_web&authuser=2
+
+17. https://drive.google.com/file/d/1Im5iH_Jz8pS1Rz00EJGygDUJicCIIwK9/view?usp=drive_web&authuser=2
+
+18. https://drive.google.com/file/d/1KXYJvrMqctvMn_8-7x8XpeS9jAo-QkXn/view?usp=drive_web&authuser=2
+
+19. https://drive.google.com/file/d/1Y4nT1fKLNHNK39pcMRnYXfvKXkI5O1WR/view?usp=drive_web&authuser=2
+
+
+SYLLABUS
+Dear all,
+Syllabus for CNS Online Test-2: (17th May 2021)
+Unit-2 Remaining parts from Test-1: Block ciphers: Modes
+of operation, DES and its variants, AES
+
+Unit-3 complete:  Number Theory: Fermat's theorem, Chinese remainder theorem, Primality testing algorithm, Quadratic residues, Legendre symbol, Jacobi symbol.
